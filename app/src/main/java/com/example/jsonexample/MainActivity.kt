@@ -21,17 +21,18 @@ class MainActivity : AppCompatActivity() {
 init()
     }
 fun init() {
-    val text = findViewById<EditText>(R.id.name)
+    val text = findViewById<TextView>(R.id.name)
+    var textOne = findViewById<TextView>(R.id.nameOne)
     val obj = JSONObject(this.loadJSONFromAsset())
     val userArray = obj.getJSONArray("users")
 
     val userDetail = userArray.getJSONObject(0)
 users=userDetail.getString("1")
-
+val usersOne=userDetail.getString("2")
     text.setText(users)
-
+    textOne.setText(usersOne)
 }
-@SuppressLint("RestrictedApi")
+//@SuppressLint("RestrictedApi")
 fun Context.loadJSONFromAsset():String{
 //    val t = getActivity(this@MainActivity)!!.assets.openRawResourse("imp.json")
 val t = resources.openRawResource(R.raw.imp)
