@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
 
    floatingActionButton.setOnClickListener{
-       val fragmentOne = MainActivity2()
+       val fragmentOne = MainActivtiyThree()
        val fragmentManager = supportFragmentManager
 
        val fragmentTransaction = fragmentManager.beginTransaction()
