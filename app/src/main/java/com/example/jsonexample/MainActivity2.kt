@@ -13,7 +13,7 @@ import org.json.JSONObject
 import java.util.*
 
 
-class MainActivity2 : Fragment() {
+class MainActivity2(val t : Int, val s:Int) : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -34,7 +34,7 @@ class MainActivity2 : Fragment() {
         textTwo.setTypeface(face)
         textThree.setTypeface(face)
 
-        for (i in  0.. 3){
+        for (i in  t.. s){
 
     val obj = JSONObject(loadJSONFromAsset())
     val objOne = obj.getJSONArray("Ardass")
@@ -43,10 +43,10 @@ class MainActivity2 : Fragment() {
     val userArrayOne = userArray.getJSONArray("lines")
     val userDetail = userArrayOne.getJSONObject(0).getJSONObject("gurmukhi").getString("SGPC")
     when(i){
-        0->     text.setText(userDetail)
-        1->      textOne.setText(userDetail)
-        2->      textTwo.setText(userDetail)
-        3->      textThree.setText(userDetail)
+        t  ->     text.setText(userDetail)
+        t+1 ->      textOne.setText(userDetail)
+        t+2 ->      textTwo.setText(userDetail)
+        t+3 ->      textThree.setText(userDetail)
 
     }
 }
