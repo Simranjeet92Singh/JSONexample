@@ -1,7 +1,8 @@
 package com.example.jsonexample
 
-import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
+import android.content.res.AssetManager
+import android.graphics.Typeface
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import org.json.JSONObject
+import java.util.*
+
 
 class MainActivity2 : Fragment() {
     override fun onCreateView(
@@ -16,30 +19,53 @@ class MainActivity2 : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-//        return super.onCreateView(inflater, container, savedInstanceState)
-    val view = inflater.inflate(R.layout.activity_main2,container,false)
+        val view = inflater.inflate(R.layout.activity_main2, container, false)
 
-//
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//        super.onViewCreated(view, savedInstanceState)
-////    var users = ""
+        val text = view.findViewById<TextView>(R.id.textViewOne) as TextView
+        var textOne = view.findViewById<TextView>(R.id.textViewTwo)
+        var textTwo = view.findViewById<TextView>(R.id.textViewThree)
+        var textThree = view.findViewById<TextView>(R.id.textViewFour)
 
-    val text = view.findViewById<TextView>(R.id.name) as TextView
-    var textOne = view.findViewById<TextView>(R.id.nameOne)
+
+
+        val face = Typeface.createFromAsset(requireContext().assets,"GurbaniWebThick.ttf")
+        text.setTypeface(face)
+        textOne.setTypeface(face)
+        textTwo.setTypeface(face)
+        textThree.setTypeface(face)
+
+        for (i in  0.. 3){
+
     val obj = JSONObject(loadJSONFromAsset())
-    val userArray = obj.getJSONArray("users")
+    val objOne = obj.getJSONArray("Ardass")
 
-    val userDetail = userArray.getJSONObject(0)
-     val users = userDetail.getString("1")
-    val usersOne = userDetail.getString("2")
-    text.setText(users)
-    textOne.setText(usersOne)
-return view
+    val userArray = objOne.getJSONObject(i)
+    val userArrayOne = userArray.getJSONArray("lines")
+    val userDetail = userArrayOne.getJSONObject(0).getJSONObject("gurmukhi").getString("SGPC")
+    when(i){
+        0->     text.setText(userDetail)
+        1->      textOne.setText(userDetail)
+        2->      textTwo.setText(userDetail)
+        3->      textThree.setText(userDetail)
+
+    }
+}
+
+//        var value = "1"
+//        var value = requireArguments().getString("Key")
+//        val bundle = Bundle()
+
+//        val intent = Intent(context, MainActivity::class.java)
+//        bundle.putString("Key", "0")
+//        intent.putExtras(bundle)
+//        startActivity(intent)
+
+
+        return view
     }
 
     fun loadJSONFromAsset(): String {
-//    val t = getActivity(this@MainActivity)!!.assets.openRawResourse("imp.json")
-        val t = resources.openRawResource(R.raw.imp)
+        val t = resources.openRawResource(R.raw.ardas)
         val size = t.available()
         val buffer = ByteArray(size)
         t.read(buffer)
@@ -47,36 +73,3 @@ return view
         return String(buffer, Charsets.UTF_8)
     }
 }
-
-//}
-//    var users=""
-//
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main2)
-//        init()
-//    }
-//    fun init() {
-//        val text = findViewById<TextView>(R.id.name)
-//        var textOne = findViewById<TextView>(R.id.nameOne)
-//        val obj = JSONObject(this.loadJSONFromAsset())
-//        val userArray = obj.getJSONArray("users")
-//
-//        val userDetail = userArray.getJSONObject(0)
-//        users=userDetail.getString("1")
-//        val usersOne=userDetail.getString("2")
-//        text.setText(users)
-//        textOne.setText(usersOne)
-//    }
-//    //@SuppressLint("RestrictedApi")
-//    fun Context.loadJSONFromAsset():String{
-////    val t = getActivity(this@MainActivity)!!.assets.openRawResourse("imp.json")
-//        val t = resources.openRawResource(R.raw.imp)
-//        val size = t.available()
-//        val buffer= ByteArray(size)
-//        t.read(buffer)
-//        t.close()
-//        return String(buffer, Charsets.UTF_8)
-//    }
-//
-//}

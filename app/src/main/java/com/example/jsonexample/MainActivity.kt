@@ -32,5 +32,24 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction.replace(R.id.fragment, fragmentOne)
         fragmentTransaction.addToBackStack(null)
         fragmentTransaction.commit()
+//val i = intent.extras
+//val p = i!!.getString("Key")
+//        val args = Bundle()
+//        args.putString("Key","1")
+//        fragmentOne.arguments=args
+
+
+   floatingActionButton.setOnClickListener{
+       val fragmentOne = MainActivity2()
+       val fragmentManager = supportFragmentManager
+
+       val fragmentTransaction = fragmentManager.beginTransaction()
+       fragmentTransaction.replace(R.id.fragment, fragmentOne)
+       fragmentTransaction.addToBackStack(null)
+       fragmentTransaction.commit()
+
+
+   }
+
     }
 }
