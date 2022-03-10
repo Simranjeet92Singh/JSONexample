@@ -1,4 +1,62 @@
 {"Ardass":[
+
+
+          {
+    "id": "CSQ",
+    "sttm_id": null,
+    "writer": "SGPC",
+    "section": "Ardaas",
+    "subsection": null,
+    "lines": [
+      {
+        "id": "2HY4",
+        "source_page": 1,
+        "source_line": null,
+        "pronunciation": null,
+        "pronunciation_information": null,
+        "type": "Pankti",
+        "gurmukhi": {
+          "SGPC": "<>sRI vwihgurU jI kI Pqih[sRI BgOqI jI shwie[vwr sRI BgOqI jI kI[pwqSwhI 10["
+            },
+            "translations": {
+              "English": {
+                "SGPC": {
+                  "translation": "God is One. All victory is of the Wondrous Guru (God).May the respected sword (God in the form of the Destroyer of evil doers) help us! Ode of the respected sword recited by the Tenth Guru.",
+                  "additional_information": {}
+                }
+              }
+            }
+            }
+          ]
+        },
+  {
+    "id": "CSQ",
+    "sttm_id": null,
+    "writer": "SGPC",
+    "section": "Ardaas",
+    "subsection": null,
+    "lines": [
+      {
+        "id": "2HY4",
+        "source_page": 1,
+        "source_line": null,
+        "pronunciation": null,
+        "pronunciation_information": null,
+        "type": "Pankti",
+        "gurmukhi": {
+          "SGPC": "ipRQm BgOqI ismir kYgur nwnk leI iDAwie[iPr AMgd gur qy Amrdwsu rwmdwsY hoeIN shwie[Arjn hrgoibMd noismrO sRI hirrwie[ sRI hirikRSn iDAweIAY ijs ifTy siB duiK jwie[ qyg bhwdr ismrIAY Gr nau iniD AwvY Dwie[ sB QweIN hoie shwie["
+        },
+        "translations": {
+          "English": {
+            "SGPC": {
+              "translation": "First remember the sword (God in the form of Destroyer of evil doers); then remember and meditate upon Guru Nanak. Then remember and meditate upon Guru Angad, Guru Amar Das and Guru Ram Das: May they help us! Remember and meditate upon Guru Arjan, Guru Hargobind and Respected Guru Har Rai.Remember and meditate upon respected Guru Har Krishan, by having the sight of whom, all pains vanish.Remember and meditate upon Guru Tegh Bahadur; and then nine sources of wealth will come hastening to your home.Oh Respected Gurus! kindly help us everywhere.(*This is the end of the section written by Guru Gobind Singh ji, the rest was compiled after the Guru’s time.)",
+              "additional_information": {}
+            }
+          }
+        }
+      }
+    ]
+  },
   {
     "id": "CSQ",
     "sttm_id": null,
@@ -187,6 +245,37 @@
     ]
   },
   {
+    "id": "CSQ",
+    "sttm_id": null,
+    "writer": "SGPC",
+    "section": "Ardaas",
+    "subsection": null,
+    "lines": [
+      {
+        "id": "2HY4",
+        "source_page": 1,
+        "source_line": null,
+        "pronunciation": null,
+        "pronunciation_information": null,
+        "type": "Pankti",
+        "gurmukhi": {
+          "SGPC": "jhW jhW ^wlsw jI swihb, qhW qhW r~iCAW irAwieq, dyg qyg Pqih, ibrd kI pYj, pMQ kI jIq, sRI swihbjI shwie, ^wlsy jI ky bol bwly, bolojI vwihgurU"
+        },
+        "translations": {
+          "English": {
+            "SGPC": {
+              "translation": "Wherever respected Khalsa is present, give Your protection and grace; May the free kitchen and sword never fail; Maintain the honour of your devotees; Confer victory upon the Sikh people; May the respected sword always come to our assistance; May the Khalsa always get honours; Utter Wahe Guru (Wondrous God)!",
+              "additional_information": {}
+            }
+          }
+        }
+      }
+    ]
+  },
+
+
+
+  {
     "id": "35M",
     "sttm_id": null,
     "writer": "SGPC",
@@ -314,8 +403,18 @@
             }
           }
         }
-      },
+      }
+    ]
+  },
       {
+      "id": "83K",
+      "sttm_id": null,
+      "writer": "SGPC",
+      "section": "Ardaas",
+      "subsection": null,
+      "lines": [
+
+        {
         "id": "TQAC",
         "source_page": 1,
         "source_line": null,
@@ -333,8 +432,16 @@
             }
           }
         }
-      },
-      {
+      }]},
+  {
+  "id": "83K",
+  "sttm_id": null,
+  "writer": "SGPC",
+  "section": "Ardaas",
+  "subsection": null,
+  "lines": [
+
+    {
         "id": "5WUU",
         "source_page": 1,
         "source_line": null,
@@ -352,8 +459,16 @@
             }
           }
         }
-      },
-      {
+      }]},
+  {
+  "id": "83K",
+  "sttm_id": null,
+  "writer": "SGPC",
+  "section": "Ardaas",
+  "subsection": null,
+  "lines": [
+
+    {
         "id": "5G3X",
         "source_page": 1,
         "source_line": null,
@@ -371,8 +486,15 @@
             }
           }
         }
-      },
-      {
+      }]},
+  {
+    "id": "83K",
+  "sttm_id": null,
+  "writer": "SGPC",
+  "section": "Ardaas",
+  "subsection": null,
+  "lines": [
+    {
         "id": "23VT",
         "source_page": 1,
         "source_line": null,
@@ -390,8 +512,19 @@
             }
           }
         }
-      },
-      {
+    }
+
+  ]
+  },
+  {
+  "id": "83K",
+  "sttm_id": null,
+  "writer": "SGPC",
+  "section": "Ardaas",
+  "subsection": null,
+  "lines": [
+
+    {
         "id": "Z4ZP",
         "source_page": 1,
         "source_line": null,
@@ -411,6 +544,63 @@
         }
       }
     ]
+  },
+  {
+    "id": "CSQ",
+    "sttm_id": null,
+    "writer": "SGPC",
+    "section": "Ardaas",
+    "subsection": null,
+    "lines": [
+      {
+        "id": "2HY4",
+        "source_page": 1,
+        "source_line": null,
+        "pronunciation": null,
+        "pronunciation_information": null,
+        "type": "Pankti",
+        "gurmukhi": {
+          "SGPC": "vwihgurU jI kw Kwlsw vwihgurU jI kI Pqih"
+        },
+        "translations": {
+          "English": {
+            "SGPC": {
+              "translation": "The Khalsa belongs to God; all victory is the victory of God.",
+              "additional_information": {}
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "CSQ",
+    "sttm_id": null,
+    "writer": "SGPC",
+    "section": "Ardaas",
+    "subsection": null,
+    "lines": [
+      {
+        "id": "2HY4",
+        "source_page": 1,
+        "source_line": null,
+        "pronunciation": null,
+        "pronunciation_information": null,
+        "type": "Pankti",
+        "gurmukhi": {
+          "SGPC": ""
+        },
+        "translations": {
+          "English": {
+            "SGPC": {
+              "translation": "",
+              "additional_information": {}
+            }
+          }
+        }
+      }
+    ]
   }
 ]
+
 }

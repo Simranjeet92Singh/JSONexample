@@ -2,8 +2,10 @@ package com.example.jsonexample
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.widget.EditText
 import android.widget.TextView
 import androidx.fragment.app.Fragment
@@ -15,7 +17,9 @@ import java.io.InputStream
 import java.nio.charset.Charset
 
 class MainActivity : AppCompatActivity() {
-    private  val NUM_PAGES = 3
+    private  val NUM_PAGES = 10
+//    var k : Int= 0
+
     private var mPager:androidx.viewpager.widget.ViewPager?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,11 +44,26 @@ class MainActivity : AppCompatActivity() {
         override fun getCount(): Int = NUM_PAGES
 
         override fun getItem(position: Int): Fragment {
-            when (position) {
-                0 -> return MainActivity2(0,3)
-                1 -> return MainActivity2(4,7)
-                2 -> return MainActivity2(8,9)
 
+
+
+
+            var k = position*2
+            var i = 0..NUM_PAGES
+            when (i) {
+                i -> {
+
+     return MainActivity2(k,k+1)
+
+
+                }
+
+
+
+
+            }
+            if (NUM_PAGES == 9){
+                MainActivity2(17,18)
             }
      return MainActivity2(0,3)
 
@@ -53,39 +72,3 @@ class MainActivity : AppCompatActivity() {
 }
 
 
-
-////val fragment = findViewById<androidx.fragment.app.FragmentContainerView>(R.id.fragment)
-//        val floatingActionButton =
-//            findViewById<com.google.android.material.floatingactionbutton.FloatingActionButton>(R.id.floatingButton)
-//
-////    val homeFragment = MainActivity2()
-//
-//
-//        val fragmentOne = MainActivity2()
-//        val fragmentManager = supportFragmentManager
-//
-//        val fragmentTransaction = fragmentManager.beginTransaction()
-//        fragmentTransaction.replace(R.id.fragment, fragmentOne)
-//        fragmentTransaction.addToBackStack(null)
-//        fragmentTransaction.commit()
-////val i = intent.extras
-////val p = i!!.getString("Key")
-////        val args = Bundle()
-////        args.putString("Key","1")
-////        fragmentOne.arguments=args
-//
-//
-//   floatingActionButton.setOnClickListener{
-//       val fragmentOne = MainActivtiyThree()
-//       val fragmentManager = supportFragmentManager
-//
-//       val fragmentTransaction = fragmentManager.beginTransaction()
-//       fragmentTransaction.replace(R.id.fragment, fragmentOne)
-//       fragmentTransaction.addToBackStack(null)
-//       fragmentTransaction.commit()
-//
-//
-//   }
-//
-//    }
-//}

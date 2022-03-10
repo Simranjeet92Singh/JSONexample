@@ -19,8 +19,13 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp"
+    >
         <TextView
+    android:textAlignment="center"
+            android:justificationMode="inter_word"
             android:id="@+id/textViewOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,12 +38,14 @@
 
         <TextView
             android:id="@+id/textViewTwo"
+            android:justificationMode="inter_word"
             android:layout_marginTop="52dp"
+            android:textAlignment="center"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Text"
-            android:textSize="25sp"
+            android:textSize="15sp"
             tools:ignore="MissingConstraints">
 
         </TextView>
@@ -48,6 +55,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="72dp"
+            android:textAlignment="center"
+            android:justificationMode="inter_word"
             android:text="Text"
             android:textSize="25sp"
             tools:ignore="MissingConstraints">
@@ -56,11 +65,13 @@
 
         <TextView
             android:id="@+id/textViewFour"
+            android:textAlignment="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
             android:layout_marginTop="48dp"
             android:text="Text"
-            android:textSize="25sp"
+            android:textSize="15sp"
             tools:ignore="MissingConstraints">
 
         </TextView>
